@@ -2,8 +2,9 @@ import os
 import requests
 from pyrogram import Client, filters
 from pyrogram.types import Message
+from ChatBot import app
 
-@Client.on_message(filters.command(["img", "cup", "telegraph"], prefixes="/") & filters.reply)
+@app.on_message(filters.command(["img", "cup", "telegraph"], prefixes="/") & filters.reply)
 async def c_upload(client, message: Message):
     reply = message.reply_to_message
 
