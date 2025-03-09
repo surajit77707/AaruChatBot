@@ -5,7 +5,7 @@ from ChatBot import app
 from ChatBot.database import get_chats
 
 
-@app.on_message(filters.command("stats"))
+@app.on_message(filters.command("statsggggggg"))
 async def stats(client: app, message: Message):
     data = await get_chats()
     total_users = len(data["users"])
