@@ -1,8 +1,8 @@
 import random
-from nexichat.database import get_served_chats
+from ChatBot.database import  get_chats
 from pyrogram import Client, filters
 import os
-from nexichat import nexichat
+from ChatBot import app
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from pyrogram import filters
 import random
@@ -64,7 +64,7 @@ morning_shayari = [ "🌅 ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ! ᴍᴀʏ ʏᴏᴜʀ ᴅ�
 SHAYRI_COMMAND = ["gf", "bf", "shayri", "sari", "shari", "love"]
 
 
-@nexichat.on_message(filters.command(SHAYRI_COMMAND))
+@app.on_message(filters.command(SHAYRI_COMMAND))
 async def shayri(client: Client, message: Message):
     
     await message.reply_text(
@@ -89,7 +89,7 @@ add_buttons = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="๏ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ๏",
-                url=f"https://t.me/{nexichat.username}?startgroup=true",
+                url=f"https://t.me/{ChatBot.username}?startgroup=true",
             )
         ]
     ]
@@ -98,7 +98,7 @@ add_buttons = InlineKeyboardMarkup(
 
 async def send_good_night():
     chats = []
-    schats = await get_served_chats()
+    schats = await  get_chats()
     for chat in schats:
         chats.append(int(chat["chat_id"]))
     if len(chats) == 0:
@@ -117,7 +117,7 @@ async def send_good_night():
 
 async def send_good_morning():
     chats = []
-    schats = await get_served_chats()
+    schats = await  get_chats()
     for chat in schats:
         chats.append(int(chat["chat_id"]))
     if len(chats) == 0:
@@ -125,7 +125,7 @@ async def send_good_morning():
     for chat_id in chats:
         try:
             shayari = random.choice(morning_shayari)
-            await nexichat.send_photo(
+            await app.send_photo(
                 chat_id,
                 photo="https://telegra.ph//file/14ec9c3ff42b59867040a.jpg",
                 caption=f"**{shayari}**",
@@ -139,11 +139,11 @@ async def restart_nexichat():
 
 #scheduler.add_job(send_good_night, trigger="cron", hour=23, minute=50)
 #scheduler.add_job(send_good_morning, trigger="cron", hour=6, minute=0)
-scheduler.add_job(restart_nexichat, trigger="cron", hour=0, minute=0)
-scheduler.add_job(restart_nexichat, trigger="cron", hour=7, minute=0)
-scheduler.add_job(restart_nexichat, trigger="cron", hour=12, minute=0)
-scheduler.add_job(restart_nexichat, trigger="cron", hour=15, minute=0)
-scheduler.add_job(restart_nexichat, trigger="cron", hour=18, minute=0)
-scheduler.add_job(restart_nexichat, trigger="cron", hour=21, minute=0)
+scheduler.add_job(restart_app, trigger="cron", hour=0, minute=0)
+scheduler.add_job(restart_app, trigger="cron", hour=7, minute=0)
+scheduler.add_job(restart_app, trigger="cron", hour=12, minute=0)
+scheduler.add_job(restart_app, trigger="cron", hour=15, minute=0)
+scheduler.add_job(restart_app, trigger="cron", hour=18, minute=0)
+scheduler.add_job(restart_app, trigger="cron", hour=21, minute=0)
 scheduler.start()
 
