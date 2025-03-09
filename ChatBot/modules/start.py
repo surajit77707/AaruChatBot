@@ -40,8 +40,8 @@ I'm here to chat, vibe, and bring some fun to your day.
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url=f"https://t.me/{app.username}?startgroup=true")],
                 [
-                    InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/C0DE_SEARCH"),
-                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/AsuraaSupports")
+                    InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/moviiieeeesss"),
+                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/UmbrellaUCorp")
                 ],
                 [InlineKeyboardButton(text="ᴍʏ ᴄᴏᴍᴍᴀɴᴅs", callback_data="help")]
             ])
@@ -83,8 +83,8 @@ I'm here to chat, vibe, and bring some fun to your day.
                     reply_markup=InlineKeyboardMarkup([
                         [InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ", url="https://t.me/MissAaru_Robot?startgroup=true")],
                         [
-                            InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/C0DE_SEARCH"),
-                            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/AsuraaSupports")
+                            InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/moviiieeeesss"),
+                            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/UmbrellaUCorp")
                         ],
                         [InlineKeyboardButton(text="ᴍʏ ᴄᴏᴍᴍᴀɴᴅs", callback_data="help")]
                     ])
@@ -102,6 +102,11 @@ I'm here to chat, vibe, and bring some fun to your day.
 ⬤ /kiss ➥ Get a virtual kiss from me. 😘  
 ⬤ /hug ➥ Let me wrap you in a warm hug. 🤗 
 ⬤ /waifu ➥ Want a cute waifu image? Just drop a tag, and I'll fetch one for you. 💕
+⬤ /shayri ➥ to get a shayri
+⬤ /quiz ➥ quiz to generate a quiz
+⬤ /img ➥ convert a media into a link 
+⬤ /all ➥ to tag all member of a group 
+
 
 Stay sharp, stay awesome. ✨  
 """
@@ -112,7 +117,7 @@ Stay sharp, stay awesome. ✨
                     reply_markup=InlineKeyboardMarkup([
                         [
                             InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="start"),
-                            InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/C0DE_SEARCH")
+                            InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/moviiieeeesss")
                         ]
                     ])
                 )
