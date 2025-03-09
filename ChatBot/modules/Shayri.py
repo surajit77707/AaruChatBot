@@ -89,7 +89,7 @@ add_buttons = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 text="๏ ᴀᴅᴅ ᴍᴇ ɪɴ ɢʀᴏᴜᴘ ๏",
-                url=f"https://t.me/{ChatBot.username}?startgroup=true",
+                url=f"https://t.me/{app.username}?startgroup=true",
             )
         ]
     ]
