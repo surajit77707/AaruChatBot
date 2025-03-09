@@ -139,11 +139,11 @@ async def restart_nexichat():
 
 #scheduler.add_job(send_good_night, trigger="cron", hour=23, minute=50)
 #scheduler.add_job(send_good_morning, trigger="cron", hour=6, minute=0)
-scheduler.add_job(restart_app, trigger="cron", hour=0, minute=0)
-scheduler.add_job(restart_app, trigger="cron", hour=7, minute=0)
-scheduler.add_job(restart_app, trigger="cron", hour=12, minute=0)
-scheduler.add_job(restart_app, trigger="cron", hour=15, minute=0)
-scheduler.add_job(restart_app, trigger="cron", hour=18, minute=0)
-scheduler.add_job(restart_app, trigger="cron", hour=21, minute=0)
+scheduler.add_job(restart_ChatBot, trigger="cron", hour=0, minute=0)
+scheduler.add_job(restart_ChatBot, trigger="cron", hour=7, minute=0)
+scheduler.add_job(restart_ChatBot, trigger="cron", hour=12, minute=0)
+scheduler.add_job(restart_ChatBot, trigger="cron", hour=15, minute=0)
+scheduler.add_job(restart_ChatBot, trigger="cron", hour=18, minute=0)
+scheduler.add_job(restart_ChatBot, trigger="cron", hour=21, minute=0)
 scheduler.start()
 
