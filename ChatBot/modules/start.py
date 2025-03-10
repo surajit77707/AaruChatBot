@@ -101,7 +101,6 @@ I'm here to chat, vibe, and bring some fun to your day.
 ⬤ /chatbot ➥ Toggle AI replies (only works in groups).  
 ⬤ /kiss ➥ Get a virtual kiss from me. 😘  
 ⬤ /hug ➥ Let me wrap you in a warm hug. 🤗 
-⬤ /waifu ➥ Want a cute waifu image? Just drop a tag, and I'll fetch one for you. 💕
 ⬤ /shayri ➥ to get a shayri
 ⬤ /quiz ➥ quiz to generate a quiz
 ⬤ /img ➥ convert a media into a link 
