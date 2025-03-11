@@ -3,7 +3,7 @@ import asyncio
 from pyrogram.errors import *
 from pyrogram.types import Message, InlineQuery
 import config 
-from alicex import LOGGER , app
+from ChatBot import LOGGER , app
 
 def error(func):
     @wraps(func)
