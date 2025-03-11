@@ -5,7 +5,7 @@ from ChatBot import app
 
 @app.on_message(filters.command("hug"))
 async def send_hug(client, message):
-    api_url = "https://myown.codesearch.workers.dev/hug"
+    api_url = "https://myown.codesearchdev.workers.dev/hug"
 
     try:
         response = requests.get(api_url).json()
@@ -16,18 +16,18 @@ async def send_hug(client, message):
             await client.send_animation(
                 chat_id=message.chat.id,
                 animation=hug_url,
-                caption="Aaru ka ek special hug 🤗💕",
+                caption="pahadan ka ek special hug 🤗💕",
                 reply_to_message_id=reply_id
             )
         else:
-            await message.reply_text("Hug GIF abhi nahi mil rahi. 😔")
+            await message.reply_text(" GIF abhi nahi mil rahi. 😔")
 
     except:
         await message.reply_text("Kuch gadbad hai, abhi hug nahi de sakti. 😞")
 
 @app.on_message(filters.command("kiss"))
 async def send_kiss(client, message):
-    api_url = "https://myown.codesearch.workers.dev/kiss"
+    api_url = "https://myown.codesearchdev.workers.dev/kiss"
 
     try:
         response = requests.get(api_url).json()
@@ -38,7 +38,7 @@ async def send_kiss(client, message):
             await client.send_animation(
                 chat_id=message.chat.id,
                 animation=kiss_url,
-                caption="Aaru ka pyaara kiss 😘💕",
+                caption="Pahadan ka pyaara kiss 😘💕",
                 reply_to_message_id=reply_id
             )
         else:
