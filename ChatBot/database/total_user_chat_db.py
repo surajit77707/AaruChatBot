@@ -1,4 +1,4 @@
-from ChatBot.database import chats, users
+from ChatBot.database.chats import get_chats
 
 # Save or update a user in the database
 async def save_user(user_id: int, first_name: str, username: str = None):
