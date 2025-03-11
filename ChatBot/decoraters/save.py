@@ -1,4 +1,4 @@
-from alicex.utils.database.total_user_chat_db import is_user_in_db, is_chat_in_db, save_chat, save_user
+from ChatBot.database.total_user_chat_db import is_user_in_db, is_chat_in_db, save_chat, save_user
 from functools import wraps
 from pyrogram.types import Message, CallbackQuery
 from typing import Callable
