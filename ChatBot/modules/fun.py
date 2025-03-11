@@ -2,14 +2,14 @@ import random
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from pyrogram.enums import ParseMode
-from alicex import app as bot
-from alicex.vars import HUG_IMAGES , SLAP_IMAGES , KICK_IMAGES , KILL_IMAGES , KISS_IMAGES , PAT_IMAGES , SEX_IMAGES # Assuming you have a similar list of hug images as for kiss images
+from ChatBot import app as bot
+from ChatBot.vars import HUG_IMAGES , SLAP_IMAGES , KICK_IMAGES , KILL_IMAGES , KISS_IMAGES , PAT_IMAGES , SEX_IMAGES # Assuming you have a similar list of hug images as for kiss images
 import httpx
-from alicex.vars import command_to_category
+from ChatBot.vars import command_to_category
 from httpx import RequestError
 import config 
-from alicex.decorator.save import save 
-from alicex.decorator.errors import error
+from ChatBot.decoraters.save import save 
+from ChatBot.decoraters.errors import error
 
 
 BASE_URL = "https://api.waifu.pics"
