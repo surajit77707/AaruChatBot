@@ -15,7 +15,7 @@ def get_waifu(tag):
     return None
 
 # Command handler for custom tags
-@app.on_message(filters.command("waifuo_off"))
+@app.on_message(filters.command("waifu"))
 async def send_custom_waifu(client, message):
     if len(message.command) < 2:
         await message.reply_text("You need to provide a tag. Example: `/waifu maid`", reply_to_message_id=message.id)
