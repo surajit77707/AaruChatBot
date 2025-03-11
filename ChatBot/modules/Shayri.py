@@ -73,10 +73,10 @@ async def shayri(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✨𝕊𝕌ℙℙ𝕆ℝ𝕋✨", url="https://t.me/moviiieeeesss"
+                        "✨𝕊𝕌ℙℙ𝕆ℝ𝕋✨", url="https://t.me/+e457arFSm-JlNjk9"
                     ),
                     InlineKeyboardButton(
-                        "✨ℂℍ𝔸ℕℕ𝔼𝕃✨", url="https://t.me/UmbrellaUCorp"
+                        "✨ℂℍ𝔸ℕℕ𝔼𝕃✨", url="https://t.me/mastitime211"
                     ),
                 ]
             ]
