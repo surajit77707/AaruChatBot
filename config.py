@@ -3,14 +3,14 @@ from os import getenv
 from dotenv import load_dotenv
 load_dotenv()
 
-API_ID = int(getenv("API_ID", 23967991))
-API_HASH = getenv("API_HASH", "a2c3ccfaff4c2dbbff7d54981828d4f1")
-BOT_TOKEN = getenv("BOT_TOKEN", "7622375739:AAHNWk4klSr5BEV1J8buqbWaZ9iOIcER7n0" )
-OWNER_ID = int(getenv("OWNER_ID", "1883889098"))
-MONGO_URL = getenv("MONGO_URL", "mongodb+srv://xmen7151:xmen7151@cluster0.4h4js.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-AUTH_CHANNEL = getenv("UPDATE_CHNL", "moviiieeeesss")
+API_ID = int(getenv("API_ID", 24276024))
+API_HASH = getenv("API_HASH", "d07b4f8342e732adbb300caedad3efc8")
+BOT_TOKEN = getenv("BOT_TOKEN", "7585970299:AAFdRGBFS3-Vqvuny--47HcXs5UyD8dZae4" )
+OWNER_ID = int(getenv("OWNER_ID", "8001185695"))
+MONGO_URL = getenv("MONGO_URL", "mongodb+srv://surajit54321:surajit54321@cluster0.7mn37.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+AUTH_CHANNEL = getenv("UPDATE_CHNL", "mastitime211")
 FSUB = getenv("FSUB", False)
-OWNER_USERNAME = getenv("OWNER_USERNAME", "@Ban6king9")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "@Addy_1433")
 
 
 STICKER = [
