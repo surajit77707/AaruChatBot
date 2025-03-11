@@ -5,7 +5,7 @@ from ChatBot import app
 from ChatBot.database import get_chats
 
 
-@app.on_message(filters.command("statsguh"))
+@app.on_message(filters.command("statsaddy"))
 async def stats(client: app, message: Message):
     data = await get_chats()
     total_users = len(data["users"])
@@ -18,8 +18,8 @@ async def stats(client: app, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ", url="https://t.me/MissAaru_Robot?startgroup=true"),
-                    InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url="https://t.me/C0DE_SEARCH"),
+                    InlineKeyboardButton("none", url="https://t.me/"),
+                    InlineKeyboardButton("none", url="https://t.me/"),
                 ]
             ]
         )
