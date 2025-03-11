@@ -3,7 +3,7 @@ from pyrogram import filters
 from pyrogram.enums import ParseMode
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from ANNIEMUSIC import app
+from ChatBot import app
 
 JOKE_API_ENDPOINT = (
     "https://hindi-jokes-api.onrender.com/jokes?api_key=93eeccc9d663115eba73839b3cd9"
