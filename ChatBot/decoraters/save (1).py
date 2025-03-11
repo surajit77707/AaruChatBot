@@ -3,7 +3,7 @@ from functools import wraps
 from pyrogram.types import Message, CallbackQuery
 from typing import Callable
 from pyrogram import Client
-from alicex import app
+from ChatBot import app
 import config
 from pyrogram.enums import ChatType
 
