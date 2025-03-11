@@ -1,4 +1,4 @@
-from alicex.utils.database import total_chats, total_users
+from ChatBot.database import total_chats, total_users
 
 # Save or update a user in the database
 async def save_user(user_id: int, first_name: str, username: str = None):
